@@ -1,0 +1,5 @@
+{% extends get_template('../redirect', _self) %}
+
+{% block form_body %}
+    <input type="hidden" name="RefId" value="{{ ref_id|raw }}"/>
+{% endblock %}

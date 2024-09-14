@@ -1,0 +1,33 @@
+{
+  "name": "pmpr-mdl/wp-mdl-woocommerce-gateway",
+  "type": "project",
+  "license": "proprietary",
+  "description": "Woocommerce Gateway",
+  "keywords": [
+    "wordpress",
+    "woocommerce",
+    "gateway",
+    "package"
+  ],
+  "require": {
+    "php": ">=8.2",
+    "econea/nusoap": "v0.9.11",
+    "pmpr-cmn/wp-cmn-foundation": "~1.4"
+  },
+  "prod-require": {
+    "php": "8.2",
+    "wordpress": "6.0",
+    "wp-cmn-foundation": "latest"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pmpr\\Module\\WoocommerceGateway\\": "src/Pmpr/Module/WoocommerceGateway"
+    },
+    "files": [
+      "index.php"
+    ]
+  },
+  "minimum-stability": "dev",
+  "tag": "1.1.69",
+  "timestamp": "1726343131"
+}

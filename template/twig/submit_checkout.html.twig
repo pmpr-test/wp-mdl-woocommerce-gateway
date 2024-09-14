@@ -1,0 +1,8 @@
+<form action="{{ action|default('')|esc_attr }}"
+      method="POST" class="{{ id|esc_attr }}-checkout-form" id="{{ id|esc_attr }}-checkout-form">
+    <input type="submit" name="{{ submit|esc_attr }}" class="purchase-input" id="{{ submit|esc_attr }}"
+           value="{{ submit_text|raw }}"/>
+    {{ extra_fields|raw }}
+    <a class="back-to-checkout" href="{{ back_url|esc_attr }}">{{ back_text|raw }}</a>
+</form>
+

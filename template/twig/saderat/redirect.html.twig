@@ -1,0 +1,6 @@
+{% extends get_template('../redirect', _self) %}
+
+{% block form_body %}
+    <input type="hidden" name="TOKEN" value="{{ token|raw }}"/>
+{% endblock %}
+

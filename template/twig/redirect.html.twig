@@ -1,0 +1,7 @@
+<form id="redirect_to_bank" method="post"
+      action="{{ action|esc_url }}"
+      style="display:none !important;">
+    {% block form_body %}{% endblock %}
+    <input type="submit" value="Pay"/>
+</form>
+<script>document.getElementById('redirect_to_bank').submit();</script>
